@@ -1,215 +1,321 @@
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Ragulapadu Pavithra – Internship Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+<title>Ragulapadu Pavithra – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="nav-bar">
-    <span>R. Pavithra – Portfolio 2025</span>
-    <span>CSE · Yogi Vemana University</span>
+
+<div class="stars" id="stars"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursor-trail"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">R·P</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="hero-badge fade-in delay-1">✦ CSE Student · Developer · Data Enthusiast</div>
+  <h1 class="hero-name fade-in delay-2">Ragulapadu<br>Pavithra</h1>
+  <p class="hero-subtitle fade-in delay-3">Computer Science Engineer</p>
+  <p class="hero-tagline fade-in delay-4">Building the future with Python, AI/ML & Full-Stack Web Dev</p>
+  <div class="hero-cta fade-in delay-5">
+    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    <a href="#skills" class="btn btn-secondary">View Skills</a>
   </div>
+  <div class="scroll-indicator">↓</div>
+</div>
 
-  <div class="hero-content">
-    <p class="hero-label">Internship Portfolio</p>
-    <h1 class="hero-name">Ragulapadu<br><em>Pavithra</em></h1>
-    <p class="hero-title">
-      III-Year B.Tech Computer Science student with hands-on internship experience in AI/ML and Data Visualization — building intelligent systems and insightful dashboards.
-    </p>
-    <div class="hero-contacts">
-      <span>+91 9059250661</span>
-      <a href="mailto:pavithraragulapadu@gmail.com">pavithraragulapadu@gmail.com</a>
-      <a href="https://www.linkedin.com/in/ragulapadu-pavithra-59b9b9325/" target="_blank">LinkedIn ↗</a>
-      <span>Ananthapur, Andhra Pradesh</span>
-    </div>
-  </div>
-
-  <p class="hero-scroll">↓ Scroll to explore</p>
-</header>
-
-<main>
-
-  <!-- ── ABOUT ── -->
-  <section id="about">
-    <div>
-      <p class="section-label">About Me</p>
-      <h2 class="section-title">Curious mind,<br><em>driven builder</em></h2>
-      <p class="about-text">
-        I'm a <strong>third-year B.Tech Computer Science Engineering</strong> student at YSR Engineering College, Yogi Vemana University, with a CGPA of <strong>8.8</strong>. My passion lies at the intersection of data science and real-world problem-solving — from training supervised learning models to crafting compelling data dashboards.
-        <br><br>
-        I've completed two internships — in <strong>AI/ML</strong> and <strong>Power BI</strong> — where I turned raw data into actionable insight. Outside academics, I love writing, drawing, music, and sports.
-      </p>
-    </div>
-
-    <div class="about-stats">
-      <div class="stat-card">
-        <div class="stat-number">8.8</div>
-        <div class="stat-label">Current CGPA</div>
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title cyan">About Me</h2>
+  <div class="section-line"></div>
+  <div class="about-grid card tilt">
+    <div class="avatar-container">
+      <div class="avatar">RP</div>
+      <div class="info-badges">
+        <span class="info-badge badge-cyan">3rd Year</span>
+        <span class="info-badge badge-pink">CSE</span>
+        <span class="info-badge badge-green">CGPA 8.8</span>
       </div>
-      <div class="stat-card">
-        <div class="stat-number">2</div>
-        <div class="stat-label">Internships Done</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">3+</div>
-        <div class="stat-label">Certifications</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">6</div>
-        <div class="stat-label">Tech Languages</div>
+      <div style="text-align:center; margin-top:0.5rem;">
+        <div style="font-size:0.8rem; color:rgba(255,255,255,0.5);">📍 Ananthapur, Andhra Pradesh</div>
+        <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">🎓 YSR Engineering College</div>
       </div>
     </div>
-  </section>
-
-  <!-- ── INTERNSHIPS ── -->
-  <section id="internships">
-    <p class="section-label">Work Experience</p>
-    <h2 class="section-title">Internship<br><em>Experience</em></h2>
-
-    <div class="internship-grid">
-      <!-- Internship 1 -->
-      <div class="internship-card">
-        <p class="intern-company">InternPe</p>
-        <h3 class="intern-role">AI / ML Intern</h3>
-        <p class="intern-duration">May – June 2025 &nbsp;·&nbsp; 2 Months</p>
-        <p class="intern-desc">
-          Worked on building and evaluating supervised machine learning models using industry-standard Python libraries. Gained hands-on experience with data preprocessing, feature engineering, and model optimization techniques. Applied Scikit-Learn and Pandas pipelines to solve classification and regression problems on real datasets.
-        </p>
-        <div class="intern-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Scikit-Learn</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">Supervised Learning</span>
-          <span class="tag">Machine Learning</span>
+    <div class="about-text">
+      <h3>👋 Hello, World!</h3>
+      <p>I'm a passionate <strong style="color:var(--neon-cyan)">III-year BTech student</strong> in Computer Science and Engineering with hands-on experience across Python, Java, MySQL, and full-stack web development.</p>
+      <p>I thrive at the intersection of <strong style="color:var(--neon-pink)">Artificial Intelligence</strong> and <strong style="color:var(--neon-green)">Data Visualization</strong> — turning raw data into insights that matter. My journey has taken me through real-world internships in AI/ML and Power BI.</p>
+      <p>When I'm not coding, you'll find me writing, drawing, making music, or playing sports!</p>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Internships</div>
         </div>
-      </div>
-
-      <!-- Internship 2 -->
-      <div class="internship-card">
-        <p class="intern-company">CodeAlpha</p>
-        <h3 class="intern-role">Power BI Intern</h3>
-        <p class="intern-duration">June – July 2025 &nbsp;·&nbsp; 2 Months</p>
-        <p class="intern-desc">
-          Designed and delivered interactive business intelligence dashboards and visual reports using Microsoft Power BI. Translated complex datasets into clear narratives for stakeholders, enabling data-driven decision-making. Focused on KPI tracking, DAX formulas, and building user-friendly report layouts.
-        </p>
-        <div class="intern-tags">
-          <span class="tag">Power BI</span>
-          <span class="tag">DAX</span>
-          <span class="tag">Data Visualization</span>
-          <span class="tag">Dashboarding</span>
-          <span class="tag">Business Intelligence</span>
+        <div class="stat-item">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">8.8</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Tech Skills</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ── SKILLS ── -->
-  <section id="skills">
-    <p class="section-label">Technical Profile</p>
-    <h2 class="section-title">Skills &<br><em>Expertise</em></h2>
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title pink">Technical Skills</h2>
+  <div class="section-line pink"></div>
 
-    <div class="skills-layout">
-      <div class="skill-group">
-        <h3>Programming Languages</h3>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Python</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Java</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">HTML</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">CSS</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">JavaScript</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">MySQL</span></div>
-      </div>
+  <div class="hex-skills" style="margin-bottom:2.5rem;">
+    <div class="hex-skill"><span class="hex-skill-icon">🐍</span><span class="hex-skill-name">Python</span></div>
+    <div class="hex-skill"><span class="hex-skill-icon">☕</span><span class="hex-skill-name">Java</span></div>
+    <div class="hex-skill"><span class="hex-skill-icon">🗄️</span><span class="hex-skill-name">MySQL</span></div>
+    <div class="hex-skill"><span class="hex-skill-icon">🌐</span><span class="hex-skill-name">HTML</span></div>
+    <div class="hex-skill"><span class="hex-skill-icon">🎨</span><span class="hex-skill-name">CSS</span></div>
+    <div class="hex-skill"><span class="hex-skill-icon">⚡</span><span class="hex-skill-name">JavaScript</span></div>
+    <div class="hex-skill"><span class="hex-skill-icon">📊</span><span class="hex-skill-name">Power BI</span></div>
+    <div class="hex-skill"><span class="hex-skill-icon">🤖</span><span class="hex-skill-name">ML</span></div>
+  </div>
 
-      <div class="skill-group">
-        <h3>Concepts & Tools</h3>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Object-Oriented Programming</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Machine Learning (Supervised)</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Power BI & Data Visualization</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Scikit-Learn & Pandas</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Full-Stack Web Development</span></div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Soft Skills</h3>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Team Collaboration</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Time Management</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Critical Thinking</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Problem Solving</span></div>
-        <div class="skill-item"><span class="skill-dot"></span><span class="skill-name">Bilingual (English & Telugu)</span></div>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-category cyan">⌨️ Programming Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag tag-cyan">Python</span>
+        <span class="skill-tag tag-cyan">Java</span>
+        <span class="skill-tag tag-cyan">MySQL</span>
+        <span class="skill-tag tag-cyan">JavaScript</span>
       </div>
     </div>
-  </section>
-
-  <!-- ── EDUCATION ── -->
-  <section id="education">
-    <p class="section-label">Academic Background</p>
-    <h2 class="section-title">Education<br><em>Journey</em></h2>
-
-    <div class="edu-timeline">
-      <div class="edu-item">
-        <p class="edu-year">2023 – Expected 2027</p>
-        <h3 class="edu-degree">B.Tech – Computer Science Engineering</h3>
-        <p class="edu-college">YSR Engineering College &nbsp;·&nbsp; Yogi Vemana University</p>
-        <span class="edu-cgpa">CGPA: 8.8</span>
-      </div>
-      <div class="edu-item">
-        <p class="edu-year">Passed 2023</p>
-        <h3 class="edu-degree">Intermediate – MPC</h3>
-        <p class="edu-college">Pragathi Junior College</p>
-        <span class="edu-cgpa">Score: 9.1</span>
-      </div>
-      <div class="edu-item">
-        <p class="edu-year">Passed 2021</p>
-        <h3 class="edu-degree">SSC – 10th Grade</h3>
-        <p class="edu-college">ST Mary's E.M High School</p>
-        <span class="edu-cgpa">Score: 8.7</span>
+    <div class="skill-card">
+      <div class="skill-category pink">🌐 Web Development</div>
+      <div class="skill-tags">
+        <span class="skill-tag tag-pink">HTML5</span>
+        <span class="skill-tag tag-pink">CSS3</span>
+        <span class="skill-tag tag-pink">Full-Stack</span>
+        <span class="skill-tag tag-pink">Responsive Design</span>
       </div>
     </div>
-  </section>
-
-  <!-- ── CERTIFICATIONS ── -->
-  <section id="certifications">
-    <p class="section-label">Credentials</p>
-    <h2 class="section-title">Certifications &<br><em>Courses</em></h2>
-
-    <div class="cert-list">
-      <div class="cert-card">
-        <div class="cert-icon">🐍</div>
-        <p class="cert-name">6-Month Python Course</p>
-        <p class="cert-org">GeeksforGeeks</p>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🌐</div>
-        <p class="cert-name">Full-Stack Web Development</p>
-        <p class="cert-org">GeeksforGeeks</p>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">📊</div>
-        <p class="cert-name">Power BI Dashboarding</p>
-        <p class="cert-org">Certified</p>
+    <div class="skill-card">
+      <div class="skill-category green">🤖 AI/ML & Data</div>
+      <div class="skill-tags">
+        <span class="skill-tag tag-green">Scikit-Learn</span>
+        <span class="skill-tag tag-green">Pandas</span>
+        <span class="skill-tag tag-green">Power BI</span>
+        <span class="skill-tag tag-green">Data Visualization</span>
+        <span class="skill-tag tag-green">Supervised Learning</span>
       </div>
     </div>
-  </section>
+    <div class="skill-card">
+      <div class="skill-category yellow">💡 Concepts & Soft Skills</div>
+      <div class="skill-tags">
+        <span class="skill-tag tag-yellow">OOP</span>
+        <span class="skill-tag tag-purple">Team Collaboration</span>
+        <span class="skill-tag tag-orange">Critical Thinking</span>
+        <span class="skill-tag tag-yellow">Time Management</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-</main>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2 class="section-title cyan">Experience</h2>
+  <div class="section-line"></div>
+  <div class="card">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:var(--neon-cyan); box-shadow:0 0 15px var(--neon-cyan);"></div>
+        <div class="timeline-date">June – July 2025</div>
+        <div class="timeline-title">Power BI Intern</div>
+        <div class="timeline-company">📊 CodeAlpha</div>
+        <div class="timeline-desc">Created interactive dashboards and visual reports using Power BI. Transformed complex datasets into compelling visual stories and actionable business insights for stakeholders.</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.8rem;">
+          <span class="skill-tag tag-yellow" style="font-size:0.75rem;">Power BI</span>
+          <span class="skill-tag tag-cyan" style="font-size:0.75rem;">Dashboards</span>
+          <span class="skill-tag tag-green" style="font-size:0.75rem;">Data Analysis</span>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May – June 2025</div>
+        <div class="timeline-title">AI/ML Intern</div>
+        <div class="timeline-company">🤖 InternPe</div>
+        <div class="timeline-desc">Built supervised learning models using Scikit-Learn and Pandas. Applied machine learning algorithms to real-world datasets, developing predictive models and improving model accuracy through feature engineering.</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.8rem;">
+          <span class="skill-tag tag-pink" style="font-size:0.75rem;">Scikit-Learn</span>
+          <span class="skill-tag tag-green" style="font-size:0.75rem;">Pandas</span>
+          <span class="skill-tag tag-purple" style="font-size:0.75rem;">ML Models</span>
+          <span class="skill-tag tag-cyan" style="font-size:0.75rem;">Python</span>
+        </div>
+      </div>
 
-<!-- ── FOOTER ── -->
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:var(--neon-green); box-shadow:0 0 15px var(--neon-green);"></div>
+        <div class="timeline-date">2025</div>
+        <div class="timeline-title">Data Analyst Intern</div>
+        <div class="timeline-company" style="color:var(--neon-green);">📈 Beskilled</div>
+        <div class="timeline-desc">Analyzed business datasets to extract meaningful insights and trends. Built data pipelines, created visual reports, and presented findings to support data-driven decision-making across teams.</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.8rem;">
+          <span class="skill-tag tag-green" style="font-size:0.75rem;">Data Analysis</span>
+          <span class="skill-tag tag-cyan" style="font-size:0.75rem;">SQL</span>
+          <span class="skill-tag tag-yellow" style="font-size:0.75rem;">Data Visualization</span>
+          <span class="skill-tag tag-pink" style="font-size:0.75rem;">Reporting</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:var(--neon-yellow); box-shadow:0 0 15px var(--neon-yellow);"></div>
+        <div class="timeline-date">2025</div>
+        <div class="timeline-title">Full Stack Development Intern</div>
+        <div class="timeline-company" style="color:var(--neon-yellow);">📚 Edutech</div>
+        <div class="timeline-desc">Developed and maintained full-stack web applications for an educational platform. Built responsive front-end interfaces with HTML, CSS, and JavaScript, and implemented back-end features to enhance the student learning experience.</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.8rem;">
+          <span class="skill-tag tag-yellow" style="font-size:0.75rem;">HTML/CSS/JS</span>
+          <span class="skill-tag tag-pink" style="font-size:0.75rem;">Full Stack</span>
+          <span class="skill-tag tag-cyan" style="font-size:0.75rem;">Web Development</span>
+          <span class="skill-tag tag-purple" style="font-size:0.75rem;">Backend</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 class="section-title yellow">Education</h2>
+  <div class="section-line yellow"></div>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-level">🎓 B.Tech</div>
+      <div class="edu-degree">Computer Science & Engineering</div>
+      <div class="edu-school">YSR Engineering College • Expected 2027</div>
+      <div class="edu-cgpa">
+        <span class="cgpa-label">CGPA</span>
+        <span class="cgpa-value">8.8</span>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-level">📚 Intermediate – MPC</div>
+      <div class="edu-degree">Mathematics, Physics & Chemistry</div>
+      <div class="edu-school">Pragathi Junior College • 2023</div>
+      <div class="edu-cgpa">
+        <span class="cgpa-label">CGPA</span>
+        <span class="cgpa-value">9.1</span>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-level">🏫 SSC – 10th Grade</div>
+      <div class="edu-degree">Secondary School Certificate</div>
+      <div class="edu-school">ST Mary's E.M High School • 2021</div>
+      <div class="edu-cgpa">
+        <span class="cgpa-label">CGPA</span>
+        <span class="cgpa-value">8.7</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2 class="section-title green">Certifications</h2>
+  <div class="section-line green"></div>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-icon">🐍</div>
+      <div>
+        <div class="cert-name">Python Programming (6 Months)</div>
+        <div class="cert-issuer">GeeksforGeeks</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🌐</div>
+      <div>
+        <div class="cert-name">Full-Stack Web Development</div>
+        <div class="cert-issuer">GeeksforGeeks</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">📊</div>
+      <div>
+        <div class="cert-name">Power BI Dashboarding</div>
+        <div class="cert-issuer">Certified Professional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title pink">Contact Me</h2>
+  <div class="section-line pink"></div>
+  <div class="contact-grid">
+    <a class="contact-item" href="mailto:pavithraragulapadu@gmail.com">
+      <div class="contact-icon" style="background:rgba(255,0,170,0.15); color:var(--neon-pink);">📧</div>
+      <div>
+        <div class="contact-label">Email</div>
+        <div class="contact-value">pavithraragulapadu@gmail.com</div>
+      </div>
+    </a>
+    <a class="contact-item" href="tel:+919059256611">
+      <div class="contact-icon" style="background:rgba(0,245,255,0.15); color:var(--neon-cyan);">📱</div>
+      <div>
+        <div class="contact-label">Phone</div>
+        <div class="contact-value">+91 905925661</div>
+      </div>
+    </a>
+    <a class="contact-item" href="https://www.linkedin.com/in/ragulapadu-pavithra-59b9b9325/" target="_blank">
+      <div class="contact-icon" style="background:rgba(0,255,136,0.15); color:var(--neon-green);">💼</div>
+      <div>
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">ragulapadu-pavithra</div>
+      </div>
+    </a>
+    <div class="contact-item">
+      <div class="contact-icon" style="background:rgba(255,234,0,0.15); color:var(--neon-yellow);">📍</div>
+      <div>
+        <div class="contact-label">Location</div>
+        <div class="contact-value">Ananthapur, Andhra Pradesh, India</div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:2rem;">
+    <a href="mailto:pavithraragulapadu@gmail.com" class="btn btn-primary" style="font-size:1.1rem; padding:14px 40px;">
+      ✉️ Say Hello!
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="footer-content">
-    <p class="footer-label">Get In Touch</p>
-    <h2 class="footer-name">Ragulapadu<br>Pavithra</h2>
-    <div class="footer-links">
-      <a href="mailto:pavithraragulapadu@gmail.com">pavithraragulapadu@gmail.com</a>
-      <a href="https://www.linkedin.com/in/ragulapadu-pavithra-59b9b9325/" target="_blank">LinkedIn</a>
-      <span style="color:rgba(245,240,232,0.3)">+91 9059250661</span>
-    </div>
-    <p class="footer-bottom">© 2025 Ragulapadu Pavithra &nbsp;·&nbsp; Ananthapur, Andhra Pradesh, India &nbsp;·&nbsp; Internship Portfolio</p>
-  </div>
+  <div style="font-family:'Orbitron',sans-serif; font-size:1.2rem; font-weight:700; margin-bottom:0.5rem; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-pink)); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Ragulapadu Pavithra</div>
+  <p>Built with <span>❤️</span> | CSE Student · Developer · Dreamer</p>
+  <p style="margin-top:0.5rem; font-size:0.75rem; color:rgba(255,255,255,0.25);">© 2026 Ragulapadu Pavithra. All rights reserved.</p>
 </footer>
+
+
+
 </body>
 </html>
